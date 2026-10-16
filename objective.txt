@@ -1,0 +1,9 @@
+The objective of this Movie Review System is to help viewers select movies on the basis of reviews, so they can save their time and money.
+
+Here, some users (movie experts) may give their valuable suggestions in the form of reviews on a scale of 1–10. Movie experts first have to watch the movie, which is stored in the movie table, and then, if they want, they may review it.
+
+We may use this project as a prototype of a real-world project because here we apply different database constraints and manage proper relationships such as one-to-one and one-to-many relationships.
+
+This project also tries to solve possible business problems by using different types of joins. We have also defined custom functions, triggers, and stored procedures to handle different requirements and make the project fit well with real-world requirements.
+
+The main purpose of this project is to demonstrate important DBMS concepts such as constraints, relationships, joins, functions, triggers, and stored procedures while developing a practical Movie Review System.

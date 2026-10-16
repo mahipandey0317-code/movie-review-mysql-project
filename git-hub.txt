@@ -1,6 +1,0 @@
-git-hub 
-
-1) version control system 
-
-
- 

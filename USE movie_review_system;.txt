@@ -1,0 +1,59 @@
+USE movie_review_system;
+
+-- Q.1) Display users and their watchlist movies.
+SELECT w.watchlist_id , u.user_name , m.title 
+FROM 
+watchlist w
+INNER join 
+users u
+ON u.user_id = w.user_id
+
+INNER join
+movies m 
+ON m.movie_id = w.movie_id
+;
+
+
+
+-- Q.2) Display all movies ,including those not on a watchlist. 
+
+SELECT  m.movie_id ,  m.title , w.watchlist_id 
+FROM 
+movies m 
+LEFT JOIN
+watchlist w 
+ON m.movie_id = w.movie_id ;
+
+
+-- Q.3 Dislpay reviews with movie and reviewer name. 
+SELECT u.user_name , m.title , r.rating , r.review_text 
+
+FROM 
+reviews r 
+INNER JOIN 
+watchlist w 
+ON r.watchlist_id = w.watchlisT_id 
+
+INNER JOIN 
+movies m 
+ON m.movie_id = w.movie_id 
+
+INNER JOIN 
+users u 
+ON u.user_id = w.user_id 
+;
+
+-- Q.4) Display pending movies for each user. 
+
+SELECT u.user_name , m.title 
+FROM 
+watchlist w 
+INNER JOIN 
+movies m 
+ON w.movie_id = m.movie_id 
+
+INNER JOIN 
+users u 
+ON w.user_id = u.user_id 
+
+WHERE w.status = "Pending" ;
