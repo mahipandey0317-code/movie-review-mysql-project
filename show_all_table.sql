@@ -1,5 +1,7 @@
+
 use movie_review_system;
-select*from users;
-select*from movies;
-select*from watchlist;
-select*from reviews;
+
+select * FROM users;
+select * FROM movies;
+SELECT * FROM watchlist;
+SELECT * FROM reviews;
